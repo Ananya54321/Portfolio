@@ -2,11 +2,13 @@ import React from 'react'
 import ProjectBox from './ProjectBox'
 import { codecraftlinks, facultyflowlinks, cobaltlinks } from "../data/Links";
 
+
 function Projects() {
 
   return (
-    <div>
-      <p className="rancho text-2xl md:text-5xl mt-10 ml-20"> My Projects: </p>
+    <div className='lg:m-20'>
+        
+      <p className="rancho text-2xl md:text-5xl my-10 ml-20"> My Projects: </p>
       <ProjectBox title="CodeCraft" desc="CodeCraft is a collaborative code editor with room creation functionality, real-time communication, syntax highlighting and line-locking features." 
         tech = {codecraftlinks}
         gitlink="https://github.com/Ananya54321/CodeCraft"

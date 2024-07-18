@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import Hamburger from '../assets/hamburger.png';
 import Close from '../assets/close.png';
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection, sections }) => {
   const [open, setOpen] = useState(false);
   let Links = [
-    { name: "Home", link: "/" },
-    { name: "Skills", link: "/skills" },
-    { name: "Education", link: "/education" },
-    { name: "Projects", link: "/projects" },
-    { name: "Achievements", link: "/achievements" },
-    { name: "Contact Me", link: "/contact" },
+    { name: "Home", ref: null },
+    { name: "Skills", ref: sections.skillsRef },
+    { name: "Education", ref: sections.educationRef },
+    { name: "Projects", ref: sections.projectsRef },
+    { name: "Achievements", ref: sections.achievementsRef },
+    { name: "Contact Me", ref: sections.contactRef },
   ];
 
   return (
@@ -26,9 +26,15 @@ const Navbar = () => {
           <img src={open ? Close : Hamburger} alt="Menu Icon" className='h-6' />
         </div>
         <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#033D72] md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-20 " : "top-[-490px]"}`}>
-          {Links.map((link) => (
-            <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-              <a href={link.link} className='text-gray-200 hover:underline hover:ease-in duration-500'>{link.name}</a>
+          {Links.map((link, index) => (
+            <li key={index} className='md:ml-8 text-xl md:my-0 my-7'>
+              <a
+                href={link.ref ? '#' : link.link}
+                onClick={() => link.ref && scrollToSection(link.ref)}
+                className='text-gray-200 hover:text-[#83C0F8] hover:ease-in duration-500'
+              >
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>
