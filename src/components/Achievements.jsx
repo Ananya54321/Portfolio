@@ -11,7 +11,7 @@ function Achievements() {
         My Achievements:{" "}
       </p>
       <div className="flex flex-col lg:flex-row justify-center items-center imprima">
-        <img className=" ml-10 w-[50%] h-[50]" src={achievements} alt="victory" />
+        <img className="hover:animate-[wiggle_1s_ease-in-out_infinite] transition-all ml-10 w-[50%] h-[50]" src={achievements} alt="victory" />
       
       <div>
         <AchievementBox
@@ -31,5 +31,6 @@ function Achievements() {
     </div>
   );
 }
+
 
 export default Achievements;

@@ -9,12 +9,53 @@
   color: aliceblue;
 }
 
+img:hover {
+  transition: transform 0.5s ease-in;
+  transform: scale(1.1);
+}
+
 .rancho {
   font-family: "Rancho", cursive;
 }
 
 .imprima {
   font-family: "Imprima", sans-serif;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to elements with the "fade-in" class */
+.fade-in {
+  opacity: 0; /* Initial state is hidden */
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Add individual delays for each element */
+.fade-in > * {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0s; /* Set a base delay for each element */
+}
+
+.fade-in > *:nth-child(2) {
+  opacity: 0;
+  animation-delay: 1s; /* 0.5s (base delay) + 0.5s (additional delay) */
+}
+
+.fade-in > *:nth-child(3) {
+  opacity: 0;
+  animation-delay: 1.3s; /* 0.5s (base delay) + 1s (additional delay) */
 }
 
 .aws-btn {

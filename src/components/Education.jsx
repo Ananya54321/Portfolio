@@ -4,7 +4,7 @@ import cvr from "../assets/cvr.png";
 function Education() {
   return (
     <div className="w-[100%] p-5">
-      <p className="rancho m-3 text-3xl md:text-5xl lg:m-5 lg:mt-10">
+      <p className="rancho m-3 text-3xl md:text-5xl lg:m-5 lg:py-4 lg:mt-10">
         {" "}
         My Education:{" "}
       </p>
