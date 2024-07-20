@@ -14,8 +14,8 @@ const Navbar = ({ scrollToSection, sections }) => {
   ];
 
   return (
-    <div className='shadow-md w-full top-0 left-0'>
-      <div className='md:flex items-center justify-between bg-[#033D72] py-2 md:px-10 px-7'>
+    <div className='shadow-md w-full top-0 fixed left-0 z-10 bg-blur-sm'>
+      <div className='md:flex items-center justify-between bg-[#033D72]/80 py-2 md:px-10 px-7'>
         <div className='flex justify-left items-center font-bold text-2xl cursor-pointer imprima'>
           <span className='text-3xl text-indigo-600 mr-1 pt-2'>
             <ion-icon name="logo-web-component"></ion-icon>
@@ -25,13 +25,13 @@ const Navbar = ({ scrollToSection, sections }) => {
         <div onClick={() => setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden'>
           <img src={open ? Close : Hamburger} alt="Menu Icon" className='h-6' />
         </div>
-        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#033D72] md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-20 " : "top-[-490px]"}`}>
+        <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "top-20 " : "top-[-490px]"}`}>
           {Links.map((link, index) => (
             <li key={index} className='md:ml-8 text-xl md:my-0 my-7'>
               <a
                 href={link.ref ? '#' : link.link}
                 onClick={() => link.ref && scrollToSection(link.ref)}
-                className='text-gray-200 hover:text-[#83C0F8] hover:ease-in duration-500'
+                className='imprima text-[#83C0F8] hover:text-white hover:ease-in duration-500'
               >
                 {link.name}
               </a>

@@ -26,7 +26,7 @@ const Home = () => {
     <div className="bg-[#0075A7] max-w-full min-h-screen ">
       <Navbar scrollToSection={scrollToSection} sections={{ skillsRef, experienceRef, educationRef, projectsRef, achievementsRef, contactRef }} />
       
-      <div className="flex justify-center lg:justify-between w-full items-center fade-in">
+      <div className="flex justify-center lg:justify-between mt-20 w-full items-center fade-in">
         <div className="w-[100%] flex flex-col m-5 md:w-[80%] lg:m-10 lg:ml-20 lg:w-[40%]">
           
             <p className="rancho text-3xl md:text-7xl ">Hello There, I'm Ananya!</p>

@@ -1,6 +1,7 @@
 'use client';
 import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion";
+import IconBox from './ui/IconBox';
 
 function SkillBox({ title, skills }) {
     const ref = useRef(null);
@@ -12,7 +13,7 @@ function SkillBox({ title, skills }) {
     const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   const list = skills.map((skill, index) => (
-    <img key={index} src={skill} className='h-12 m-1' alt="" />
+    <IconBox key={index} imgurl={skill} link="" className='h-12 m-1' alt="" />
   ));
   
   return (

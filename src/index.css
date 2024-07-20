@@ -8,6 +8,9 @@
   scroll-behavior: smooth;
   color: aliceblue;
 }
+html {
+  background-color: #0075a7;
+}
 
 img:hover {
   transition: transform 0.5s ease-in;
