@@ -23,7 +23,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-[#0075A7] max-w-full min-h-screen">
+    <div className="bg-[#0075A7] max-w-full min-h-screen ">
       <Navbar scrollToSection={scrollToSection} sections={{ skillsRef, experienceRef, educationRef, projectsRef, achievementsRef, contactRef }} />
       
       <div className="flex justify-center lg:justify-between w-full items-center fade-in">

@@ -8,9 +8,9 @@ function Education() {
         {" "}
         My Education:{" "}
       </p>
-      <div className="flex flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-between imprima">
+      <div className="flex flex-col items-center justify-center lg:flex-row lg:items-center lg:justify-between  imprima">
         <img src={education} alt="education in a classroom" />
-        <div className="flex bg-[#033D72] flex-col w-[80%] lg:w-[40%] m-10 p-4 border border-[#83C0F8] rounded-md">
+        <div className="flex bg-[#033D72] flex-col w-[80%] hover:scale-110 shadow-blue-500/50 hover:shadow-2xl transition-all lg:w-[40%] m-10 p-4 border border-[#83C0F8] rounded-md">
           <div className="flex items-center gap-4">
             <img src={cvr} alt="" />
             <p className="text-xl lg:text-2xl">CVR COLLEGE OF ENGINEERING, IBRAHIMPATNAM</p>

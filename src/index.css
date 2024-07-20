@@ -12,6 +12,7 @@
 img:hover {
   transition: transform 0.5s ease-in;
   transform: scale(1.1);
+  filter: saturate(2);
 }
 
 .rancho {

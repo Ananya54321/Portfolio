@@ -16,6 +16,7 @@
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "class-variance-authority": "^0.7.0",
+    "flowbite-react": "^0.10.1",
     "framer-motion": "^11.3.8",
     "ionicons": "^7.4.0",
     "react": "^18.3.1",

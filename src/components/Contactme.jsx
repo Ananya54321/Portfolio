@@ -20,7 +20,7 @@ function Contactme() {
         <IconBox imgurl={leetcode} link="https://leetcode.com/u/ananyapappula/" />
     </div>
         </div>
-        <img className='w-[50%] md:w-[25%]' src={mypic} alt="my picture" />
+        <img className='w-[50%] md:w-[25%] hover:scale-100 hover:saturate-100' src={mypic} alt="my picture" />
      </div>
   )
 }

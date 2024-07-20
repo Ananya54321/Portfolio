@@ -22,7 +22,7 @@ function SkillBox({ title, skills }) {
         scale: scaleProgress,
         opacity: opacityProgress
      }}
-    className='m-3 lg:m-5 p-4 border border-[#83C0F8] hover:scale-110 transition-all rounded-md lg:w-[30%] bg-[#033D72]'>
+    className='m-3 lg:m-5 p-4 border border-[#83C0F8] hover:shadow-2xl shadow-blue-500/50 transition-all rounded-md lg:w-[30%] bg-[#033D72]'>
       <p className='text-2xl mb-4 text-center imprima'>{title}</p>
       <div className='flex flex-wrap justify-between'>
         {list}
